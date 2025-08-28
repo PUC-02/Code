@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Trang giới thiệu game 3D với giao diện chuyên nghiệp, mượt trên mọi thiết bị." />
+    <meta name="theme-color" content="#0b0f14" />
+    <title>Quantum Strike — 3D Game Landing</title>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua nội dung</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">QS</div>
+          <span class="brand-name">Quantum Strike</span>
+        </div>
+        <nav class="nav" aria-label="Chính">
+          <a href="#features">Tính năng</a>
+          <a href="#media">Hình ảnh</a>
+          <a href="#download">Tải về</a>
+        </nav>
+        <div class="actions">
+          <button class="btn ghost" id="themeToggle" aria-label="Đổi giao diện">Giao diện</button>
+          <a class="btn primary" href="#download">Chơi ngay</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Tham chiến vũ trụ trong Quantum Strike</h1>
+            <p>
+              Trải nghiệm bắn súng chiến thuật nhịp độ cao với đồ họa 3D mượt mà, tối ưu cho mọi thiết bị.
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="#download">Tải miễn phí</a>
+              <a class="btn" href="#features">Tìm hiểu thêm</a>
+            </div>
+          </div>
+          <div class="hero-scene">
+            <div id="webgl-root" class="webgl-root" role="img" aria-label="Hình minh hoạ 3D cho trò chơi"></div>
+            <div class="poster" id="poster" hidden>
+              <div class="poster-inner">
+                <div class="brand-mark lg">QS</div>
+                <p>Thiết bị của bạn không hỗ trợ WebGL. Hiển thị ảnh tĩnh thay thế.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Tính năng nổi bật</h2>
+          <ul class="feature-grid" role="list">
+            <li>
+              <h3>Đồ hoạ 3D tối ưu</h3>
+              <p>Khung hình ổn định với tự động giảm hiệu ứng trên thiết bị yếu.</p>
+            </li>
+            <li>
+              <h3>Điều khiển trực quan</h3>
+              <p>Hỗ trợ chuột, bàn phím và cảm ứng với thao tác mượt mà.</p>
+            </li>
+            <li>
+              <h3>Đa nền tảng</h3>
+              <p>Chạy tốt trên điện thoại, máy tính bảng và máy tính để bàn.</p>
+            </li>
+            <li>
+              <h3>Âm thanh sống động</h3>
+              <p>Hiệu ứng âm thanh không gian nâng tầm trải nghiệm chiến đấu.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="media" class="media">
+        <div class="container">
+          <h2>Hình ảnh trong game</h2>
+          <div class="media-grid">
+            <div class="media-card"></div>
+            <div class="media-card"></div>
+            <div class="media-card"></div>
+            <div class="media-card"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download">
+        <div class="container">
+          <h2>Bắt đầu ngay</h2>
+          <p>Tải bản demo và tham gia cộng đồng người chơi.</p>
+          <div class="download-actions">
+            <a class="btn primary" href="#">Tải bản demo</a>
+            <a class="btn ghost" href="#">Tham gia Discord</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Quantum Strike Studio</div>
+        <a href="#">Điều khoản</a>
+        <a href="#">Chính sách</a>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+  </html>
+
