@@ -1,22 +1,33 @@
-# Quantum Strike — 3D Game Landing
 
-Trang giới thiệu game 3D, UI phong cách hệ thống, chạy mượt trên mọi thiết bị.
+# TaiXiuVNmophong
 
-## Chạy dự án
+This is a minimal Vite + React project containing a 3D Tai Xiu (Tài Xỉu) demo using **react-three-fiber** and **drei**.
+Theme: dark (black/white). Demo name: **TaiXiuVNmophong**.
 
-1. Dùng bất kỳ máy chủ tĩnh nào, ví dụ Python:
+## How to run locally
 
+1. Install dependencies:
 ```bash
-python3 -m http.server 5173
+npm install
 ```
 
-Sau đó truy cập: `http://localhost:5173`
+2. Run dev server:
+```bash
+npm run dev
+```
 
-## Công nghệ
+3. Open the URL printed by Vite (usually http://localhost:5173).
 
-- HTML/CSS thuần, responsive
-- Three.js (CDN, module) cho cảnh 3D
-- Tối ưu: giảm hiệu ứng trên thiết bị yếu, tôn trọng prefers-reduced-motion
+## How to deploy to Vercel (recommended for dark themed preview)
 
-# Code
-Lấy key
+1. Create a Vercel account at https://vercel.com and connect your GitHub.
+2. Push this project to a GitHub repository.
+3. Import the repository in Vercel, set framework to "Vite".
+4. Vercel will build and deploy automatically. The site will be available via a Vercel URL.
+
+## Notes
+
+- This demo uses client-side rendering and is **for research/education only**. No real-money transactions.
+- If you want a ready preview without deploying, you can upload the project folder to CodeSandbox or StackBlitz (they support Vite).
+- For improved mobile performance, reduce `Environment` usage and lower `dpr` in Canvas.
+
